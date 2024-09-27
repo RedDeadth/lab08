@@ -12,8 +12,7 @@ class TaskViewModel(private val dao: TaskDao) : ViewModel() {
     // Estado para la lista de tareas
     private val _tasks = MutableStateFlow<List<Task>>(emptyList())
     val tasks: StateFlow<List<Task>> = _tasks
-
-
+    
     init {
         // Al inicializar, cargamos las tareas de la base de datos
         viewModelScope.launch {
