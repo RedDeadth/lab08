@@ -10,10 +10,10 @@ data class Task(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     var description: String,
     var isCompleted: Boolean = false,
-    var createdAt: Date = Date(),
+
     var priority: Priority = Priority.MEDIUM,
     var category: String = "",
-    var dueDate: Date? = null,
+
     var recurrenceInterval: RecurrenceInterval? = null
 )
 

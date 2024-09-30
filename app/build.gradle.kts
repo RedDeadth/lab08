@@ -58,6 +58,11 @@ dependencies {
     implementation("androidx.room:room-ktx:$room_version")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$room_version")
 
+    implementation ("androidx.compose.material3:material3:1.1.1")
+    implementation ("androidx.compose.ui:ui:1.4.3")
+    implementation ("androidx.compose.ui:ui-tooling-preview:1.4.3")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
